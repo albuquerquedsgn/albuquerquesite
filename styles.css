@@ -22,20 +22,6 @@ body{
   overflow-x:hidden;
 }
 
-/* background waves layer */
-.bg-layer{
-  position:fixed;
-  inset:0;
-  background-image: url('fundo-ondas.png');
-  background-size: cover;
-  background-position: center;
-  filter: contrast(1.02) saturate(0.95) brightness(0.95);
-  transform: translateZ(-200px) scale(1.12);
-  z-index:0;
-  will-change: transform;
-  opacity:0.95;
-}
-
 /* header */
 .site-header{
   position:relative;
@@ -131,3 +117,16 @@ body{
   .site-header{flex-direction:column;gap:12px}
   .nav{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
 }
+
+/* background waves layer */
+.bg-layer{
+  position:fixed;
+  inset:0;
+  background-image: url('fundo-ondas.png');
+  background-size: cover;
+  background-position: center;
+  filter: contrast(1.02) saturate(0.95) brightness(0.95);
+  transform: translateZ(-200px) scale(1.12);
+  z-index:0;
+  will-change: transform;
+  opacity:0.95;
